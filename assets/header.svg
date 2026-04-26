@@ -21,99 +21,100 @@
   <!-- Background -->
   <rect width="900" height="280" rx="12" fill="url(#bg)"/>
 
-  <!-- Left document -->
-  <g transform="translate(120, 40)">
-    <!-- Document shape -->
-    <rect x="0" y="0" width="160" height="200" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1.5"/>
+  <!-- ========== LEFT DOCUMENT (OLD) ========== -->
+  <g transform="translate(100, 38)">
+    <!-- Document body -->
+    <rect x="0" y="0" width="160" height="204" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1.5"/>
     <!-- Fold corner -->
     <path d="M120,0 L160,40 L120,40 Z" fill="#30363d"/>
-    <!-- Header lines -->
-    <rect x="16" y="20" width="88" height="10" rx="2" fill="#8b949e" opacity="0.7"/>
+    <!-- Section 1: Header -->
+    <rect x="16" y="18" width="90" height="11" rx="2" fill="#8b949e" opacity="0.7"/>
     <!-- Content lines -->
-    <rect x="16" y="48" width="120" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <rect x="16" y="62" width="100" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <rect x="16" y="76" width="110" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <rect x="16" y="46" width="128" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <rect x="16" y="60" width="110" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <rect x="16" y="74" width="120" height="6" rx="2" fill="#484f58" opacity="0.5"/>
     <!-- Section divider -->
-    <line x1="16" y1="96" x2="144" y2="96" stroke="#30363d" stroke-width="1"/>
-    <!-- Second section header -->
-    <rect x="16" y="108" width="72" height="10" rx="2" fill="#8b949e" opacity="0.7"/>
-    <!-- Second section lines -->
-    <rect x="16" y="132" width="115" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <rect x="16" y="146" width="95" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <rect x="16" y="160" width="108" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <rect x="16" y="174" width="80" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <!-- OLD label -->
-    <text x="80" y="218" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#8b949e" letter-spacing="2">OLD</text>
+    <line x1="16" y1="92" x2="144" y2="92" stroke="#30363d" stroke-width="1"/>
+    <!-- Section 2: Header -->
+    <rect x="16" y="104" width="74" height="11" rx="2" fill="#8b949e" opacity="0.7"/>
+    <!-- Content lines -->
+    <rect x="16" y="128" width="120" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <rect x="16" y="142" width="100" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <rect x="16" y="156" width="115" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <rect x="16" y="170" width="85" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <!-- OLD badge -->
+    <rect x="50" y="216" width="60" height="20" rx="4" fill="#30363d" stroke="#484f58" stroke-width="1"/>
+    <text x="80" y="230" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#8b949e" letter-spacing="1.5">OLD</text>
   </g>
 
-  <!-- Diff arrows -->
-  <g transform="translate(310, 110)" filter="url(#glow)">
+  <!-- ========== DIFF ARROW ========== -->
+  <g transform="translate(290, 110)" filter="url(#glow)">
     <!-- Arrow shaft -->
-    <line x1="0" y1="30" x2="80" y2="30" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="28" x2="70" y2="28" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round"/>
     <!-- Arrow head -->
-    <polygon points="80,22 96,30 80,38" fill="#58a6ff"/>
-    <!-- Diff symbol -->
-    <text x="40" y="18" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#58a6ff">diff</text>
+    <polygon points="70,20 88,28 70,36" fill="#58a6ff"/>
+    <!-- "diff" label -->
+    <text x="35" y="16" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#58a6ff" letter-spacing="0.5">diff</text>
   </g>
 
-  <!-- Right document (new) -->
-  <g transform="translate(430, 40)">
-    <!-- Document shape -->
-    <rect x="0" y="0" width="160" height="200" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1.5"/>
+  <!-- ========== RIGHT DOCUMENT (NEW) ========== -->
+  <g transform="translate(420, 38)">
+    <!-- Document body -->
+    <rect x="0" y="0" width="160" height="204" rx="6" fill="#21262d" stroke="#30363d" stroke-width="1.5"/>
     <!-- Fold corner -->
     <path d="M120,0 L160,40 L120,40 Z" fill="#30363d"/>
-    <!-- Header lines -->
-    <rect x="16" y="20" width="88" height="10" rx="2" fill="#8b949e" opacity="0.7"/>
-    <!-- Content lines - modified section (yellow highlight) -->
-    <rect x="12" y="44" width="136" height="16" rx="3" fill="#d29922" opacity="0.15"/>
-    <rect x="16" y="48" width="120" height="6" rx="2" fill="#d29922" opacity="0.7"/>
-    <rect x="16" y="62" width="100" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <rect x="16" y="76" width="110" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <!-- Section 1: Header -->
+    <rect x="16" y="18" width="90" height="11" rx="2" fill="#8b949e" opacity="0.7"/>
+    <!-- Content lines with MODIFIED highlight -->
+    <rect x="12" y="42" width="136" height="16" rx="3" fill="#d29922" opacity="0.18"/>
+    <rect x="16" y="46" width="128" height="6" rx="2" fill="#d29922" opacity="0.8"/>
+    <rect x="16" y="60" width="110" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <rect x="16" y="74" width="120" height="6" rx="2" fill="#484f58" opacity="0.5"/>
     <!-- Section divider -->
-    <line x1="16" y1="96" x2="144" y2="96" stroke="#30363d" stroke-width="1"/>
-    <!-- Second section header -->
-    <rect x="16" y="108" width="72" height="10" rx="2" fill="#8b949e" opacity="0.7"/>
-    <!-- Second section lines -->
-    <rect x="16" y="132" width="115" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <rect x="16" y="146" width="95" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <rect x="16" y="160" width="108" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <rect x="16" y="174" width="80" height="6" rx="2" fill="#484f58" opacity="0.5"/>
-    <!-- NEW section (green highlight) -->
-    <rect x="12" y="182" width="136" height="16" rx="3" fill="#3fb950" opacity="0.15"/>
-    <rect x="16" y="186" width="100" height="6" rx="2" fill="#3fb950" opacity="0.7"/>
-    <!-- NEW label -->
-    <text x="80" y="218" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#8b949e" letter-spacing="2">NEW</text>
+    <line x1="16" y1="92" x2="144" y2="92" stroke="#30363d" stroke-width="1"/>
+    <!-- Section 2: Header -->
+    <rect x="16" y="104" width="74" height="11" rx="2" fill="#8b949e" opacity="0.7"/>
+    <!-- Content lines unchanged -->
+    <rect x="16" y="128" width="120" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <rect x="16" y="142" width="100" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <rect x="16" y="156" width="115" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <rect x="16" y="170" width="85" height="6" rx="2" fill="#484f58" opacity="0.5"/>
+    <!-- Section 3: ADDED highlight -->
+    <line x1="16" y1="188" x2="144" y2="188" stroke="#3fb950" stroke-width="1" opacity="0.5"/>
+    <rect x="12" y="192" width="136" height="10" rx="3" fill="#3fb950" opacity="0.18"/>
+    <rect x="16" y="194" width="90" height="5" rx="2" fill="#3fb950" opacity="0.8"/>
+    <!-- NEW badge -->
+    <rect x="370" y="216" width="60" height="20" rx="4" fill="#30363d" stroke="#484f58" stroke-width="1"/>
+    <text x="400" y="230" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#8b949e" letter-spacing="1.5">NEW</text>
   </g>
 
-  <!-- Change indicators on right doc -->
-  <g transform="translate(418, 40)">
-    <!-- Modified marker -->
-    <circle cx="6" cy="55" r="5" fill="#d29922"/>
-    <text x="6" y="59" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#0d1117">~</text>
-    <!-- Added marker -->
-    <circle cx="6" cy="193" r="5" fill="#3fb950"/>
-    <text x="6" y="59" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#0d1117">+</text>
-    <text x="6" y="197" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#0d1117">+</text>
+  <!-- ========== CHANGE INDICATORS ========== -->
+  <!-- Modified (~) indicator - circle on left edge of right doc -->
+  <circle cx="410" cy="60" r="7" fill="#d29922"/>
+  <text x="410" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#0d1117">~</text>
+
+  <!-- Added (+) indicator - circle on left edge of right doc -->
+  <circle cx="410" cy="200" r="7" fill="#3fb950"/>
+  <text x="410" y="204" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#0d1117">+</text>
+
+  <!-- ========== SECTION BRACKETS ========== -->
+  <g transform="translate(600, 38)">
+    <!-- Section 1 bracket (modified) -->
+    <path d="M0,8 Q-8,8 -8,16 L-8,86 Q-8,94 0,94" fill="none" stroke="#d29922" stroke-width="1.8" opacity="0.7"/>
+    <text x="10" y="52" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#d29922" opacity="0.9">sec 1</text>
+    <text x="10" y="66" font-family="system-ui, sans-serif" font-size="9" fill="#d29922" opacity="0.65">modified</text>
+
+    <!-- Section 2 bracket (unchanged) -->
+    <path d="M0,94 Q-8,94 -8,102 L-8,178 Q-8,186 0,186" fill="none" stroke="#8b949e" stroke-width="1.5" opacity="0.45"/>
+    <text x="10" y="142" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e" opacity="0.6">sec 2</text>
+    <text x="10" y="156" font-family="system-ui, sans-serif" font-size="9" fill="#8b949e" opacity="0.45">unchanged</text>
+
+    <!-- Section 3 bracket (added) -->
+    <path d="M0,190 Q-8,190 -8,198 L-8,220 Q-8,228 0,228" fill="none" stroke="#3fb950" stroke-width="1.8" opacity="0.7"/>
+    <text x="10" y="210" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#3fb950" opacity="0.9">sec 3</text>
+    <text x="10" y="224" font-family="system-ui, sans-serif" font-size="9" fill="#3fb950" opacity="0.65">added</text>
   </g>
 
-  <!-- Section brackets (showing section-level analysis) -->
-  <g transform="translate(610, 50)">
-    <!-- Section 1 bracket -->
-    <path d="M0,10 Q-8,10 -8,18 L-8,78 Q-8,86 0,86" fill="none" stroke="#d29922" stroke-width="1.5" opacity="0.6"/>
-    <text x="8" y="52" font-family="monospace" font-size="10" fill="#d29922" opacity="0.8">sec 1</text>
-    <text x="8" y="64" font-family="monospace" font-size="9" fill="#d29922" opacity="0.6">modified</text>
-
-    <!-- Section 2 bracket -->
-    <path d="M0,96 Q-8,96 -8,104 L-8,176 Q-8,184 0,184" fill="none" stroke="#8b949e" stroke-width="1.5" opacity="0.4"/>
-    <text x="8" y="144" font-family="monospace" font-size="10" fill="#8b949e" opacity="0.6">sec 2</text>
-    <text x="8" y="156" font-family="monospace" font-size="9" fill="#8b949e" opacity="0.5">unchanged</text>
-
-    <!-- Section 3 bracket -->
-    <path d="M0,190 Q-8,190 -8,198 L-8,222 Q-8,230 0,230" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.6"/>
-    <text x="8" y="210" font-family="monospace" font-size="10" fill="#3fb950" opacity="0.8">sec 3</text>
-    <text x="8" y="222" font-family="monospace" font-size="9" fill="#3fb950" opacity="0.6">added</text>
-  </g>
-
-  <!-- Title -->
-  <text x="450" y="262" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#8b949e" letter-spacing="1">Markdown Section-Level Semantic Diff</text>
+  <!-- ========== BOTTOM TITLE ========== -->
+  <text x="450" y="268" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#8b949e" letter-spacing="0.8">Markdown Section-Level Semantic Diff</text>
 </svg>
