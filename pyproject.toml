@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mddiff"
+version = "0.1.0"
+description = "Markdown差分ビューア (セクション単位、追加/削除ハイライト)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "izag8216" }]
+keywords = ["markdown", "diff", "cli", "viewer", "sections"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = ["rich>=13.0"]
+
+[project.scripts]
+mddiff = "mddiff.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/izag8216/mddiff"
+Repository = "https://github.com/izag8216/mddiff"
+Issues = "https://github.com/izag8216/mddiff/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mddiff"]
